@@ -39,7 +39,7 @@ build:
           type=sha 
           type=raw,value=latest,enable={{is_default_branch}}
 
-# build and push our image, using output from previous step
+          # build and push our image, using output from previous step
       - name: Build and push Docker image
       uses: docker/build-push-action@v3
       with:
